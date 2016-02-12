@@ -1,0 +1,40 @@
+.noticias_css .jcarousel-container {
+    background: #F0F6F9;
+    border: 1px solid #346F97;
+}
+
+.noticias_css .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.noticias_css .jcarousel-container-horizontal {
+    width: 100%;
+    min-height: 100%;
+}
+
+.noticias_css .jcarousel-clip {
+    overflow: auto;
+}
+
+.noticias_css .jcarousel-clip-horizontal {
+    width:  278px;
+    height: 100%;
+}
+
+.noticias_css .jcarousel-item {
+    width: 278px;
+    height: 184px;
+}
+
+.noticias_css .jcarousel-item-horizontal {
+	margin: 0;
+}
+
+.noticias_css .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin: 0;
+}
+
+.noticias_css .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}

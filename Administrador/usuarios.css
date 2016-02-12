@@ -1,0 +1,301 @@
+/********************* formatos basicos de la pagina con arreglos ***********************/
+
+@font-face {
+  font-family: 'DoctorSoos';
+  src: url('../fuentes/DoctorSoosBold.eot'); /* for IE */
+  src: local('DoctorSoosBold.ttf'),
+    url("../fuentes/DoctorSoosBold.otf") format("opentype"),
+    url("../fuentes/DoctorSoosBold.ttf") format("TrueType"); /* these are for other browsers */
+}
+
+body
+{
+  margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+h1
+{
+  font-family: DoctorSoos;
+  color: #FFF;
+  margin-top: 0px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  /*solo IE*/
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#8F8F8F', Direction=135, Strength=4);
+}
+
+#cabezote
+{
+  min-height: 200px;
+  max-height: 200px;
+  background-image: url(../imagenes/fondocabezote.png);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+hr#hrmenu
+{
+  background-color: #F15A24;
+  color: #F15A24;
+  height: 8px;
+  margin: 0;
+  border: 0;
+}
+
+#contenido, #contenido2, #div_index_izq_sup, #div_index_izq_inf, #div_index_der_sup,
+#div_index_der_inf, #div_index_cen_sup, #div_ins_izq_sup, a
+{
+  overflow: hidden;
+}
+
+#contenido, #contenido2 {
+  background-color: #FFE4C0;
+}
+
+#contenido
+{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-bottom: 91px;
+}
+
+#contenido #menu, #menu_izq li
+{
+  text-align: center;
+}
+
+#contenido #menu li, #contenido #menu li a
+{
+  list-style: none;
+  display: inline;
+  border: 0;
+  max-height: 67px;
+}
+
+#menu_izq li
+{
+  max-width: 150px;
+  min-width: 150px;
+  list-style: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 3px 0 3px 0;
+}
+
+#menu_izq li:hover, #menu_izq li.activo, #link_archivos:hover, #link:hover
+{
+  color: #25A5D7;
+}
+
+#link_archivos {
+  color: #F16824;
+  text-decoration: none;
+  font-size: small;
+}
+
+#msj_error_texto {
+  color: red;
+}
+
+label.valid {
+  background: url(../imagenes/checked.png) no-repeat;
+  height:16px;
+  width:16px;
+  padding-left: 18px;
+}
+
+#button {
+  min-width: 151px;
+  max-width: 151px;
+  min-height: 41px;
+  max-height: 41px;
+  color: black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  cursor: pointer;
+  padding: 3px;
+  font-size: 20px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  /*solo IE*/
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#8F8F8F', Direction=135, Strength=4);
+}
+
+#button:hover {
+  background-color: #00CCFF;
+  color: white;
+}
+
+#pie
+{
+  clear: both;
+  min-height: 91px;
+  max-height: 91px;
+  margin-top: -91px;
+  background-image: url(../imagenes/fondo_pie.png);
+  background-repeat: repeat-x;
+  text-align: center;
+  font-size: small;
+}
+
+#texto_pie
+{
+  padding-top: 70px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FFF;
+}
+
+/********************* fin formatos basicos ****************************/
+
+/********************* formatos accesos administrativos ********************/
+thead {
+  background-image: url(../imagenes/barra_horizontal.png);
+  background-repeat: repeat-x;
+}
+
+#load
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6CDEEE;
+  z-index: 1000;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -64px;
+  margin-left: -64px;
+}
+
+#button, #encabezado, #menu_ppal {
+  font-family: DoctorSoos;
+}
+
+thead {
+  background-image: url(../imagenes/barra_horizontal.png);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+#contenido_usuarios {
+  min-width: 480px;
+  margin-left: 5px;
+  padding: 5px;
+  background-image: url(../imagenes/contenido.png);
+  color: black;
+  text-align: justify;
+}
+
+#main{
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+#acceso {
+  max-width: 500px;
+  margin: auto;
+}
+
+#contenido2 {
+  margin: 3px;
+}
+
+/**************************** inicio menu ************************************/
+#menu_usuarios, #menu_usuarios ul{
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  position: relative;
+  line-height: 1.5em;
+  border: 3px solid #EBEBEB;
+  min-height: 35px;
+  background-color: #19BCD5;
+  font-family: DoctorSoos;
+  margin: 3px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#menu_usuarios li{
+  float: left;
+  position: relative;
+  margin: 5px 5px;
+}
+
+#menu_usuarios li a, #menu_usuarios li ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: white 0.1em 0.1em 0.2em;
+  /*solo IE*/
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#FFFFFF', Direction=135, Strength=4);
+}
+
+#menu_usuarios li a:hover {
+  color: #E09B03;
+}
+
+#menu_usuarios ul {
+  position: absolute;
+  display: none;
+  width: 230px;
+  margin-top: 0;
+}
+
+#menu_usuarios li ul a{
+  height:auto;
+  float:left;
+  overflow: hidden;
+}
+
+#menu_usuarios ul ul{
+  top: auto;
+}
+
+#menu_usuarios li ul ul {
+  left: 230px;
+  margin: 0px 0 0 10px;
+}
+
+#menu_usuarios li:hover ul ul, #menu_usuarios li:hover ul ul ul, #menu_usuarios li:hover ul ul ul ul{
+  display: none;
+}
+#menu_usuarios li:hover ul, #menu_usuarios li li:hover ul, #menu_usuarios li li li:hover ul, #menu_usuarios li li li li:hover ul{
+  display: block;
+}
+
+#menu_usuarios .salir {
+  float: right;
+  margin-right: 50px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0px;
+  height: auto;
+}
+
+/********************************** fin menu ******************************/
+
+#subir_archivo, #fileprogress {
+  color: #FFFFFF;
+}
+
+#link {
+  color: black;
+  text-decoration: none;
+}

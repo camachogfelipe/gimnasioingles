@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/2010/xhtml">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gimnasio Ingles</title>
+<link href="gik.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/flowplayer-3.2.4.min.js"></script>
+<script language="javascript" src="scripts/jquery-1.6.1.js"></script>
+<script language="javascript" src="scripts/jquery.corner.js"></script>
+<script language= "JavaScript"type= "text/javascript">
+$(function() {
+    $('img[data-hover]').hover(function() {
+        $(this).attr('tmp', $(this).attr('src')).attr('src', $(this).attr('data-hover')).attr('data-hover', $(this).attr('tmp')).removeAttr('tmp');
+    }).each(function() {
+        $('<img />').attr('src', $(this).attr('data-hover'));
+    });;
+});
+
+$(document).ready(function()  
+{
+	$('#BannerNoticias').corner();
+	$('#div_index_izq_inf').corner();
+	$('#div_index_der_inf').corner();
+});
+
+function recargar(p,y,z)
+{
+	var pagina=p+y;
+	//alert(pagina);
+	$.post(pagina, function(data){
+		$(z).load($(z).html(data));
+	});
+}
+</script>
+</head>
+
+<body>
+<div id="cabezote"><img src="imagenes/cabezote.png" width="1024" height="200" /></div>
+<hr id="hrmenu" />
+<div id="contenido">
+	<div id="menu">
+    	<li>
+        	<a href= "">
+        		<img src="imagenes/inicio1.png" data-hover="imagenes/inicio2.png" width="107" height="67" border="0" />
+            </a>
+		</li>
+        <li>
+        	<a href= "#" onclick="recargar('institucional.php', '?i=0', '#contenido2')">
+            	<img src="imagenes/institucional1.png" data-hover="imagenes/institucional2.png" width="153" height="67" border="0" />
+			</a>
+		</li>
+        <li>
+        	<a href= "#">
+            	<img src="imagenes/calendario1.png"data-hover="imagenes/calendario2.png" width="129" height="67" border="0" />
+			</a>
+		</li>
+        <li>
+        	<a href= "#">
+            	<img src="imagenes/galeria1.png" data-hover="imagenes/galeria2.png" width="119" height="67" border="0" />
+			</a>
+		</li>
+        <li>
+        	<a href= "#">
+            	<img src="imagenes/niveles1.png" data-hover="imagenes/niveles2.png" width="121" height="67" border="0" />
+			</a>
+		</li>
+        <li>
+        	<a href= "#">
+            	<img src="imagenes/contacto1.png" data-hover="imagenes/contacto2.png" width="116" height="67" border="0" />
+			</a>
+		</li>
+    </div>
+    <div id="contenido2">
+	    <div id="div_index_izq_sup">
+    		<h1>
+        		<img src="imagenes/cuadrado_azul.png" width="33" height="33" align="texttop" /> 
+        		Bienvenido
+			</h1>
+    	    <p>Esto es un texto de prueba para la página de inicio del gimnasio ingles. Esto es un texto de prueba para la página de inicio del gimnasio ingles. Esto es un texto de prueba para la página de inicio del gimnasio ingles. Esto es un texto de prueba para la página de inicio del gimnasio ingles.</p>
+	    </div>
+    	<div id="div_index_der_sup">
+    		<div id="BannerNoticias"></div>
+	    </div>
+    	<div id="div_index_cen_sup">
+    		<a href="videos/gik.flv" style="display:block;width:100%;height:250px; margin-left:auto;margin-right:auto" id="player"></a>
+			<!-- this will install flowplayer inside previous A- tag. -->
+	        <script>
+				flowplayer("player", "scripts/flowplayer-3.2.5.swf",
+				{
+					clip: {
+						autoPlay: false,
+					}
+				});
+			</script>
+	    </div>
+    	<div id="div_index_izq_inf">
+    		<h1>
+   	    		<img src="imagenes/rectangulo naranja.png" alt="" width="33" height="45" align="absmiddle" />
+	            Proximos eventos
+    	    </h1>
+	    </div>
+		<div id="div_index_der_inf">
+			<h1>
+    			<img src="imagenes/rectangulo azul.png" alt="" width="33" height="45" align="absmiddle" />
+	            Alianzas
+			</h1>
+		</div>
+	</div>
+</div>
+<div id="pie">
+	<p id="texto_pie">Copyright &copy; Gimnasio Ingles Kindergarden 2011. Todos los derechos reservados. Programación Por <a href="http://www.cogroupsas.com">Felipe Camacho</a>, Dise&ntilde;o por Tonica Films, Adpataci&oacute;n para web VideoExpress.org</p>
+</div>
+</body>
+</html>

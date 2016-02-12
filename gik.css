@@ -1,0 +1,385 @@
+@font-face {
+  font-family: 'DoctorSoos';
+  src: url('fuentes/DoctorSoosBold.eot'); /* for IE */
+  src: local('DoctorSoosBold.ttf'),
+	url("fuentes/DoctorSoosBold.svg#DoctorSoosBold") format("svg"),
+    url("fuentes/DoctorSoosBold.otf") format("opentype"),
+    url("fuentes/DoctorSoosBold.ttf") format("truetype"); /* these are for other browsers */
+}
+
+body
+{
+  margin: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+#button, h1 {
+  font-family: DoctorSoos;
+}
+
+h1
+{
+  font-family: DoctorSoos;
+  color: #FFF;
+  margin-top: 0;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  /*solo IE*/
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#8F8F8F', Direction=135, Strength=4);
+}
+
+#load
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6CDEEE;
+  z-index: 1000;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -64px;
+  margin-left: -64px;
+}
+
+#cabezote
+{
+  min-height: 200px;
+  max-height: 200px;
+  background-image: url(imagenes/fondocabezote.png);
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+hr#hrmenu
+{
+  background-color: #F15A24;
+  color: #F15A24;
+  height: 8px;
+  margin: 0;
+  border: 0;
+}
+
+#contenido, #contenido2, #div_index_izq_sup, #div_index_izq_inf, #div_index_der_sup,
+#div_index_der_inf, #div_index_cen_sup, #div_ins_izq_sup, a
+{
+  overflow: hidden;
+}
+
+#contenido
+{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFE4C0;
+  overflow: hidden;
+  padding-bottom: 91px;
+}
+
+#contenido #menu, #menu_izq li
+{
+  text-align: center;
+}
+
+#contenido #menu li, #contenido #menu li a
+{
+  list-style: none;
+  display: inline;
+  border: 0;
+  max-height: 67px;
+}
+
+#div_index_izq_sup, #div_index_izq_inf, #div_index_cen_sup
+{
+  max-height: 250px;
+}
+
+#div_index_izq_sup, #div_index_izq_inf, #div_ins_izq_sup, #menu_izq
+{
+  float: left;
+}
+
+#div_index_izq_sup, #div_index_izq_inf, #div_ins_izq_sup,
+div_index_izq_inf, #contenido3
+{
+  margin-left: 5px;
+}
+
+#div_index_der_sup, #div_index_der_inf
+{
+  float: right;
+  margin-right: 5px;
+}
+
+#div_index_izq_sup
+{
+  width: 280px;
+  max-width: 280px;
+}
+
+#div_index_der_sup
+{
+  width: 280px;
+  max-width: 280px;
+}
+
+#div_index_izq_inf, #div_index_der_inf
+{
+  margin-top: 5px;
+  margin-bottom: 75px;
+  background-color: #FFF;
+  width: 482px;
+  margin-right: 5px;
+  min-height: 180px;
+}
+
+#div_index_izq_inf
+{
+  clear: both;
+}
+
+#div_index_izq_inf, #div_index_der_inf, #div_index_cen_sup
+{
+  padding: 5px;
+}
+
+#div_index_cen_sup
+{
+  margin-left: 290px;
+  margin-right: 290px;
+}
+
+#BannerNoticias
+{
+  background-color: #4D4D4D;
+  min-height: 186px;
+  max-height: 186px;
+  padding: 3px;
+  color: #FFFFFF;
+  font-size: smaller;
+}
+
+#menu_izq li
+{
+  max-width: 150px;
+  min-width: 150px;
+  margin: 3px 0 3px 0;
+}
+
+#menu_izq li, #eventos ul li {
+  list-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#eventos ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+#menu_izq li:hover, #menu_izq li.activo, #link_archivos:hover, #eventos ul li a:hover
+{
+  color: #25A5D7;
+}
+
+#div_ins_izq_sup
+{
+  width: 700px;
+}
+
+#contenido3
+{
+  margin-left: 160px;
+}
+
+#link_archivos {
+  color: #F16824;
+  text-decoration: none;
+  font-size: small;
+}
+
+#msj_error_texto {
+  color: red;
+}
+
+label.valid {
+  background: url(imagenes/checked.png) no-repeat;
+  height:17px;
+  width:15px;
+  padding-left: 18px;
+}
+
+#button {
+  min-width: 151px;
+  max-width: 151px;
+  min-height: 41px;
+  max-height: 41px;
+  color: black;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  cursor: pointer;
+  padding: 3px;
+  font-size: 20px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  /*solo IE*/
+  filter:progid:DXImageTransform.Microsoft.Shadow(color='#8F8F8F', Direction=135, Strength=4);
+}
+
+#button:hover {
+  background-color: #00CCFF;
+  color: white;
+}
+
+#calendario, #calendario caption {
+  background-color: #E9E9E9;
+  padding: 3px;
+}
+
+#calendario caption {
+  color: #4FB8C9;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#calendario thead th {
+  background-color: #4FB8C9;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#calendario tr td, #calendario tr td.festivo {
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  height: 100px;
+  vertical-align: top;
+}
+
+#calendario tr td.festivo {
+  background-color: #FBB03B;
+}
+
+.numerod, .numerof {
+  float: right;
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-weight: bolder;
+  background-color: #FFFFFF;
+}
+
+.numerod, .numerof {
+  color: #4FB8C9;
+}
+
+#eventos{
+  margin: 0;
+  padding: 0;
+  clear: both;
+  text-align: justify;
+}
+
+#eventos ul {
+  padding: 0;
+  margin: 0;
+}
+
+#eventos ul li, .eventos_home li {
+  margin-left: 24px;
+  list-style-image: url(imagenes/list-image.png);
+  font-size: x-small;
+}
+
+.eventos_home li, .eventos_home {
+	font-size: medium;
+	margin-left: 0;
+}
+
+#evento_detalle {
+  background-image: url(imagenes/lateral.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.detalle {
+  margin-right: 215px;
+  text-align: justify;
+  padding: 2px;
+}
+
+#hoy {
+  background-color: #5BB4D3;
+}
+
+/************************** galeria alianzas ************************/
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 83%;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal li {
+  text-align: center;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 90%;
+}
+
+/************************ fin galeria alianzas ***************************/
+
+#pie
+{
+  clear: both;
+  min-height: 91px;
+  max-height: 91px;
+  margin-top: -91px;
+  background-image: url(imagenes/fondo_pie.png);
+  background-repeat: repeat-x;
+  text-align: center;
+  font-size: small;
+}
+
+#texto_pie
+{
+  padding-top: 70px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 80%;
+}
+
+#servicios, #servicios caption {
+  background-color: #E9E9E9;
+  padding: 3px;
+  border-collapse: collapse;
+}
+
+#servicios caption {
+  color: #4FB8C9;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#servicios thead th {
+  background-color: #4FB8C9;
+  color: #FFFFFF;
+}
+
+#servicios tr td {
+  border: 2px solid #FFFFFF;
+  text-align: center;
+  vertical-align: top;
+  text-align: justify;
+  border-collapse: collapse;
+}
