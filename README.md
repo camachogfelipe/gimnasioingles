@@ -1,4 +1,4 @@
-# Proyecto Xpertos
+# Proyecto Gimnasio Ingles Jardín
 
 ## Team
 
